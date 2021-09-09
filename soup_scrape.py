@@ -26,7 +26,6 @@ class ScrapeManager:
                             5) JSON
                             6) PARSE DATA
                             \n>> """))
-
                 if x == 1:
                     print(f"""\n----STATUS CODE: {self.requested_doc.status_code}\n""")
                 elif x == 2:
@@ -39,15 +38,12 @@ class ScrapeManager:
                     print(f"""\n----JSON: {self.requested_doc.json}\n""")
                 elif x == 6:
                     return self.parse_document() 
-                    
-            
             except ValueError:
-                print("Incorrect Data Type Used. Script requires an integer to be used.")
-
+                print("Incorrect Data Type Used. Script Requires Int.")
+            
     def parse_document(self):
-        print("PARSETEST")
         soup = BeautifulSoup(self.requested_doc.text, "lxml") 
-        print(soup)
+        print(soup.prettify())
  
 def run():
     scrape_instance = ScrapeManager()    
