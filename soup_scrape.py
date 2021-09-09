@@ -11,8 +11,13 @@ class Scraper:
             requested_doc = requests.get(input("Enter Url:\n>> "))
             self.view_raw_html(requested_doc)
         except MissingSchema:
-            print("bad url")    
-    
+            print("Invalid URL")    
+
+    def spoof_user_agent(self):
+        headers = {
+            "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+        }
+
     def view_raw_html(self, requested_doc):
         while True:
             try:
