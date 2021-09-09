@@ -9,3 +9,6 @@ Scrape data from urls. Bypass 403 responses without headaches. Parse your data i
 ### Notes
 * Emphasis on scalability with OOP
 * Emphasis on re-usability factor
+
+## NEW!
+* This is a fat update to your readme file
