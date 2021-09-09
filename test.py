@@ -32,11 +32,15 @@ class Client(QWebEnginePage):
         loop.exec_()
         return self.html
 
+    def scraps_to_txt(self):
+        File_object = open(r"Scraped_Page.txt", "w+")
+        for contents in self.html:
+            File_object.write(contents)
+
 secret_url = url
 client_response=Client(secret_url)
 source=client_response.get_html()
-
-print(source)
+client_response.scraps_to_txt()
 
 #### headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0'}
 #### requested_doc = requests.get(url, headers=headers)
