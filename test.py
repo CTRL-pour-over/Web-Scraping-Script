@@ -36,6 +36,7 @@ class Client(QWebEnginePage):
         File_object = open(r"Scraped_Page.txt", "w+")
         for contents in self.html:
             File_object.write(contents)
+        File_object.close()
 
 secret_url = url
 client_response=Client(secret_url)
