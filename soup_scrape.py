@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from requests.models import MissingSchema
 
-class Scraper:
+class ScrapeManager:
     def request_html_page(self):
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0'}
         try:
@@ -47,7 +47,7 @@ class Scraper:
               
 
 def run():
-    scrape_instance = Scraper()    
+    scrape_instance = ScrapeManager()    
     scrape_instance.request_html_page()
 
 run()
