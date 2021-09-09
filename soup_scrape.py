@@ -6,7 +6,7 @@ class ScrapeManager:
     def __init__(self):
         requested_doc = ''
 
-    async def request_html_page(self):
+    def request_html_page(self):
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0'}
         try:
             self.requested_doc = requests.get(input("ENTER URL:\n>> "), headers=headers)
