@@ -35,16 +35,43 @@ class ScrapeManager:
                 elif x == 5:
                     print(f"""\n----JSON: {arg_requested_doc.json}\n""")
                 elif x == 6:
-                    self.parse_data(arg_requested_doc) 
+                    self.parse_document(arg_requested_doc) 
 
             except ValueError:
                 print("Incorrect Data Type Used. Script requires an integer to be used.")
 
-    def parse_data(self, arg_requested_doc):
-        soup = BeautifulSoup(arg_requested_doc.text, "lxml")
-        print(soup)
+    def parse_document(self, arg_requested_doc):
+        soup = BeautifulSoup(arg_requested_doc.text, "lxml") 
+        self.view_soup(soup)
              
-              
+    def view_soup(self, arg_soup):
+        while True:
+            try:
+                x = int(input("""
+                            TYPE AN INT TO SHOW DATA:
+                            1) STATUS CODE
+                            2) HEADERS
+                            3) ENCODING
+                            4) TEXT
+                            5) JSON
+                            6) PARSE DATA
+                            \n>> """))
+
+                if x == 1:
+                    print(f"""\n----STATUS CODE: {arg_requested_doc.status_code}\n""")
+                elif x == 2:
+                    print(f"""\n----HEADERS: {arg_requested_doc.headers}\n""")
+                elif x == 3:
+                    print(f"""\n----ENCODING: {arg_requested_doc.encoding}\n""")
+                elif x == 4:
+                    print(f"""\n----TEXT: {arg_requested_doc.text}\n""")
+                elif x == 5:
+                    print(f"""\n----JSON: {arg_requested_doc.json}\n""")
+                elif x == 6:
+                    self.parse_data(arg_requested_doc) 
+
+            except ValueError:
+                print("Incorrect Data Type Used. Script requires an integer to be used.")
 
 def run():
     scrape_instance = ScrapeManager()    
