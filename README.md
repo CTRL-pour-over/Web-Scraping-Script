@@ -1,9 +1,8 @@
 # Python WebScraper / Parser Client
-Scrape data from urls. Bypass 403 responses without headaches. Parse your data in one go without having to create a new script every time you want to scrape and parse a page. 
+Scrape data from urls. Bypass 403 responses without headaches. Parse your data in one go without having to create a new script every time you want to scrape and parse a page. Scrape Dynamic sites with ease thanks to PyQt5 integration.
 
-##  Dependencies
-* requests - 2.26.0
-* beautifulsoup4 - 4.10.0
+## Primary Dependencies
+* PyQt5
 * lxml - 4.6.3
 
 ### Notes
