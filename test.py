@@ -130,11 +130,11 @@ print(li_Price ,len(li_Price))
 dict = {
     "----Vendor----": li_Vendor,
     "----Strain----": li_Strain,
-    "----li_Straintype----": li_Straintype,
-    "----li_Weight----": li_Weight,
-    "----li_THC_Contents----": li_THC_Contents,
-    "----li_Type----": li_Type,
-    "----li_Price----": li_Price
+    "-------Straintype-------": li_Straintype,
+    "----Weight----": li_Weight,
+    "----THC_Contents----": li_THC_Contents,
+    "----Type----": li_Type,
+    "----Price----": li_Price
     }
 
 
