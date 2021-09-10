@@ -17,16 +17,20 @@ class ScrapeManager:
             print("Invalid URL")    
 
     def view_raw_html(self):
-        mapping: Dict[UserSelection, Callable[[], None]] = {
-            UserSelection.STATUS_CODE: lambda: print(f"""\n----STATUS CODE: {self.response.status_code}\n"""),
-            UserSelection.HEADERS:     lambda: print(f"""\n----HEADERS: {self.response.headers}\n"""),
-            UserSelection.ENCODING:    lambda: print(f"""\n----ENCODING: {self.response.encoding}\n"""),
-            UserSelection.TEXT:        lambda: print(f"""\n----TEXT: {self.response.text}\n"""),
-            UserSelection.JSON:        lambda: print(f"""\n----JSON: {self.response.json}\n"""),
-            UserSelection.PARSE_DATA:  lambda: self.parse_document()
-        }
+        user_selection = get_user_selection()
 
-        mapping[get_user_selection()]()
+        if user_selection == UserSelection.STATUS_CODE:
+            print(f"""\n----STATUS CODE: {self.response.status_code}\n""")
+        elif user_selection == UserSelection.HEADERS:
+            print(f"""\n----HEADERS: {self.response.headers}\n""")
+        elif user_selection == UserSelection.ENCODING:
+            print(f"""\n----ENCODING: {self.response.encoding}\n""")
+        elif user_selection == UserSelection.TEXT:
+            print(f"""\n----TEXT: {self.response.text}\n""")
+        elif user_selection == UserSelection.JSON:
+            print(f"""\n----JSON: {self.response.json}\n""")
+        elif user_selection == UserSelection.PARSE_DATA:
+            self.parse_document()
 
     def parse_document(self):
         soup = BeautifulSoup(self.response.text, "lxml") 
