@@ -7,6 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 from secret_url import url
 import re
+from pandas import DataFrame
 
 
 class Client(QWebEnginePage):
@@ -63,6 +64,15 @@ soup = BeautifulSoup(File_object, "lxml")
 #ninja_column_15 = Myrcene (terpene header, percentage) = ninja_clmn_nm_myrcene = terpene_header
 #ninja_column_16 = Pinene (terpene header, percentage) = ninja_clmn_nm_pinene = terpene_header
 #ninja_column_17 = Terpinolene (terpene header, percentage) = ninja_clmn_nm_terpinolene = terpene_header
+li_Vendor = []
+li_Strain = []
+li_Straintype = []
+li_Weight = []
+li_THC_Contents = []
+li_CBD_Contents = []
+li_Type = []
+li_Price = []
+
 col = soup.find_all(class_="ninja_column_1")
 for contents in col:
     string = contents.find_next_sibling(class_="ninja_column_7")
@@ -88,8 +98,37 @@ for contents in col:
             cbd = re.search('>(.+?)</td>', str(cbdelem)).group(1)
             typeelem = string.find_next_sibling(class_="ninja_column_8")
             type = re.search('>(.+?)</td>', str(typeelem)).group(1)
-            print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
+            #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
+            li_Vendor.append(vendor)
+            li_Strain.append(strain)
+            li_Straintype.append(straintype)
+            li_Weight.append(wt)
+            li_THC_Contents.append(thc) # EMPTY 
+            li_Type.append(type)
+            li_Price.append(price)
+    
+print(li_Vendor ,len(li_Vendor))
+print(li_Strain ,len(li_Strain))
+print(li_Straintype ,len(li_Straintype))
+print(li_Weight ,len(li_Weight))
+print(li_THC_Contents ,len(li_THC_Contents))
+print(li_CBD_Contents ,len(li_CBD_Contents))
+print(li_Type ,len(li_Type))
+print(li_Price ,len(li_Price))
 
+
+dict = {
+    "----Vendor----": li_Vendor,
+    "----Strain----": li_Strain,
+    "----li_Straintype----": li_Straintype,
+    "----li_Weight----": li_Weight,
+    "----li_THC_Contents----": li_THC_Contents,
+    "----li_Type----": li_Type,
+    "----li_Price----": li_Price
+    }
+
+df = DataFrame(dict)
+print(df)
 #### headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0'}
 #### requested_doc = requests.get(url, headers=headers)
 #### 
