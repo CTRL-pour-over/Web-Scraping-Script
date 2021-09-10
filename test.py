@@ -38,11 +38,14 @@ class Client(QWebEnginePage):
         return self.html
 
     def scraps_to_txt(self):
-        File_object = open(r"Scraped_Page.txt", "wb") #I really don't know what the w+ was, but wb turns it into binary mode, whatever that is. I changed it because I was getting an encoding error
-        for contents in self.html:
-            File_object.write(contents.encode('utf8')) #When writing the contents, I use the encode method with the utf8 argument because it cried about the unicode characters if I didn't have this. Even with it though, it was still broken until I changed w+ to wb 2 lines up.
-        File_object.close()
-
+        # I really don't know what the w+ was, but wb turns it into binary mode, whatever that is.
+        # I changed it because I was getting an encoding error
+        with open(r"Scraped_Page.txt", "wb") as file_object:
+            for contents in self.html:
+                # When writing the contents, I use the encode method with the utf8 argument
+                # because it cried about the unicode characters if I didn't have this.
+                # Even with it though, it was still broken until I changed w+ to wb 2 lines up.
+                file_object.write(contents.encode('utf8'))
 @dataclass
 class Product:
     vendor: str
