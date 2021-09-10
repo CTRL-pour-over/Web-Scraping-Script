@@ -108,7 +108,6 @@ for contents in col:
             #print(strain + " " + wt + " " + thc + " " + str(price2) + " " + str(thcwt) + " " + str(thcpercent) + " " + str(convwt))
             ppthc = (float(price2)/float(thcwt)) #the price of 1mg of thc per substance. like golf, lower = better
             print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price + " " + str(thcpercent) + " " + str(convwt) + " " + str(thcwt) + " " + str(ppthc))
-<<<<<<< HEAD
             #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
             li_Vendor.append(vendor)
             li_Strain.append(strain)
