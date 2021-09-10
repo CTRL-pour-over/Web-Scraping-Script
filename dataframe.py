@@ -9,7 +9,8 @@ print(t.li_THC_Contents ,len(t.li_THC_Contents))
 print(t.li_CBD_Contents ,len(t.li_CBD_Contents))
 print(t.li_Type ,len(t.li_Type))
 print(t.li_Price ,len(t.li_Price))
-
+print(t.li_THCwt ,len(t.li_THCwt))
+print(t.li_PpTHC ,len(t.li_PpTHC))
 
 dict = {
     "----Vendor----": t.li_Vendor,
@@ -18,7 +19,9 @@ dict = {
     "----li_Weight----": t.li_Weight,
     "----li_THC_Contents----": t.li_THC_Contents,
     "----li_Type----": t.li_Type,
-    "----li_Price----": t.li_Price
+    "----li_Price----": t.li_Price,
+    "----mg of THC----": t.li_THCwt,
+    "----Price Per mg of THC----": t.li_PpTHC
     }
 
 df = DataFrame(dict)
