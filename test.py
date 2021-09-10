@@ -91,7 +91,10 @@ for contents in col:
             strainelem = string.find_previous_sibling(class_="ninja_column_1")
             #strain = re.search('>(.+?)<img alt>', str(strainelem)).group(1) # returning extra bullshit rn
             strain = strainelem.get_text().strip() #using a text strip instead of regex because it was being annoying. could probably do this for the rest of them, but too little too late i guess
-            straintype = re.search('>(.+?)</td>', str(strainelem)).group(1) # redo this to get the strain type by the <img alt="Sativa(or hybrid whatev)" height="idgaf"
+            try:
+                straintype = re.search('alt=\"(.+?)\"', str(strainelem)).group(1)
+            except AttributeError:
+                straintype = re.search('alt=\"(.+?)\"', str(strainelem))
             wtelem = string.find_previous_sibling(class_="ninja_column_2")
             wt = re.search('>(.+?)</td>', str(wtelem)).group(1)
             thcelem = string.find_previous_sibling(class_="ninja_column_3")
