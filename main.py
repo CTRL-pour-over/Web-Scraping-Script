@@ -31,7 +31,6 @@ class ScrapeManager:
     def parse_document(self):
         soup = BeautifulSoup(self.response.text, "lxml") 
         print(soup.prettify())
- 
 
 class UserSelection(Enum):
     STATUS_CODE = 1
