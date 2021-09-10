@@ -91,7 +91,7 @@ for contents in col:
             strainelem = string.find_previous_sibling(class_="ninja_column_1")
             #strain = re.search('>(.+?)<img alt>', str(strainelem)).group(1) # returning extra bullshit rn
             strain = strainelem.get_text().strip() #using a text strip instead of regex because it was being annoying. could probably do this for the rest of them, but too little too late i guess
-            try:
+            try: #searches for the strain type by assuming that the first match for alt='contents' in the ninja_column_1 element will be part of the img tag for the strain type icon
                 straintype = re.search('alt=\"(.+?)\"', str(strainelem)).group(1)
             except AttributeError:
                 straintype = re.search('alt=\"(.+?)\"', str(strainelem))
