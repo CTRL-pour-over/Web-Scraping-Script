@@ -15,11 +15,11 @@ print(t.li_PpTHC ,len(t.li_PpTHC))
 dict = {
     "----Vendor----": t.li_Vendor,
     "----Strain----": t.li_Strain,
-    "----li_Straintype----": t.li_Straintype,
-    "----li_Weight----": t.li_Weight,
-    "----li_THC_Contents----": t.li_THC_Contents,
-    "----li_Type----": t.li_Type,
-    "----li_Price----": t.li_Price,
+    "-------Straintype-------": t.li_Straintype,
+    "----Weight----": t.li_Weight,
+    "----THC_Contents----": t.li_THC_Contents,
+    "----Type----": t.li_Type,
+    "----Price----": t.li_Price,
     "----mg of THC----": t.li_THCwt,
     "----Price Per mg of THC----": t.li_PpTHC
     }

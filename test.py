@@ -9,7 +9,6 @@ from secret_url import url
 import re
 from pandas import DataFrame
 
-
 class Client(QWebEnginePage):
     toHtmlFinished = pyqtSignal()
 
@@ -135,19 +134,17 @@ print(li_Price ,len(li_Price))
 print(li_THCwt ,len(li_THCwt))
 print(li_PpTHC ,len(li_PpTHC))
 
-
 dict = {
     "----Vendor----": li_Vendor,
     "----Strain----": li_Strain,
-    "----li_Straintype----": li_Straintype,
-    "----li_Weight----": li_Weight,
-    "----li_THC_Contents----": li_THC_Contents,
-    "----li_Type----": li_Type,
-    "----li_Price----": li_Price,
+    "----Straintype----": li_Straintype,
+    "----Weight----": li_Weight,
+    "----THC_Contents----": li_THC_Contents,
+    "----Type----": li_Type,
+    "----Price----": li_Price,
     "----mg of THC----": li_THCwt,
     "----Price Per mg of THC----": li_PpTHC
     }
-
 
 df = DataFrame(dict)
 df.to_csv("THCcsv.csv")
