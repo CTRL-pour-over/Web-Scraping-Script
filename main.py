@@ -1,4 +1,4 @@
-from typing import Callable, Dict, Void
+from typing import Callable, Dict
 import requests
 from bs4 import BeautifulSoup
 from requests.models import MissingSchema, Response
@@ -26,7 +26,7 @@ class ScrapeManager:
             UserSelection.PARSE_DATA:  lambda: self.parse_document()
         }
 
-        mapping[get_user_selection()]
+        mapping[get_user_selection()]()
 
     def parse_document(self):
         soup = BeautifulSoup(self.response.text, "lxml") 
