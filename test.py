@@ -93,7 +93,7 @@ for contents in col:
             convwt = re.sub("[^0-9]", "", wt)
             match = re.match('\d+mg', str(wt), re.IGNORECASE)#checks to see if it's in milligrams
             if match is None: #runs this if it's not in milligrams to convert to milligrams (making the assumption it's in grams instead)
-                convwt = float(convwt)*100
+                convwt = float(convwt)*100 # why is this like this? 1 * 100 is not 1000
             thcwt = (float(convwt) * (float(thcpercent)/100)) #the amount of substance that's actual thc, achieved by multiplying the total weight/mass by the percentage of thc/100 SOME OF THE SHIT IS IN GRAMS LIKE 1G
             #print(strain + " " + wt + " " + thc + " " + str(price2) + " " + str(thcwt) + " " + str(thcpercent) + " " + str(convwt))
             ppthc = (float(price2)/float(thcwt)) #the price of 1mg of thc per substance. like golf, lower = better
