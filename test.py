@@ -1,4 +1,7 @@
 import sys
+from typing import List, Optional
+from bs4.element import Tag
+from dataclasses import dataclass
 from numpy import array
 import PyQt5
 from PyQt5.QtWidgets import QApplication, QLabel
@@ -39,6 +42,32 @@ class Client(QWebEnginePage):
         for contents in self.html:
             File_object.write(contents.encode('utf8')) #When writing the contents, I use the encode method with the utf8 argument because it cried about the unicode characters if I didn't have this. Even with it though, it was still broken until I changed w+ to wb 2 lines up.
         File_object.close()
+
+@dataclass
+class Product:
+    vendor: str
+    name: str
+    weight: str
+    thc: str
+    cbd: str
+    price: str
+
+def is_heading_row(row: Tag) -> bool:
+    style = row.attrs.get('style')
+    return style is not None and 'background-color' in style
+
+def as_product(row: Tag) -> Optional[Product]:
+    if is_heading_row(row):
+        return None
+
+    return Product(
+        vendor = row.select_one('td.ninja_column_0').text,
+        name   = row.select_one('td.ninja_column_1').text,
+        weight = row.select_one('td.ninja_column_2').text,
+        thc    = row.select_one('td.ninja_column_3').text,
+        cbd    = row.select_one('td.ninja_column_4').text,
+        price  = row.select_one('td.ninja_column_5').text
+    )
 
 class ParseAndPort:
     
@@ -81,7 +110,19 @@ class ParseAndPort:
         self.li_THCwt = []
         self.li_PpTHC = []
 
-    def parse_contents(self) -> list:
+    def get_products(self) -> List[Product]:
+        rows = soup.select('#footable_7821 > tbody > tr')
+
+        optional_products: List[Optional[Product]] = [as_product(row) for row in rows]
+
+        products: List[Product] = [product for product in optional_products if product is not None]
+
+        return products
+
+    def parse_contents(self):
+
+
+
         col = soup.find_all(class_="ninja_column_1")
         for contents in col:
             string = contents.find_next_sibling(class_="ninja_column_7")
@@ -185,6 +226,16 @@ File_object = open(r"Scraped_Page.txt")
 soup = BeautifulSoup(File_object, "lxml")
 
 data_set = ParseAndPort(soup)
+
+products = data_set.get_products()
+
+if not products:
+    print('No products found')
+
+for product in data_set.get_products():
+    print(product)
+
+
 data_set.parse_contents()
 data_set.print_attr_length()
 data_set.port_to_dataframe()
