@@ -9,7 +9,6 @@ from secret_url import url
 import re
 from pandas import DataFrame
 
-
 class Client(QWebEnginePage):
     toHtmlFinished = pyqtSignal()
 
@@ -72,6 +71,8 @@ li_THC_Contents = []
 li_CBD_Contents = []
 li_Type = []
 li_Price = []
+li_THCwt = []
+li_PpTHC = []
 
 col = soup.find_all(class_="ninja_column_1")
 for contents in col:
@@ -107,15 +108,17 @@ for contents in col:
             thcwt = (float(convwt) * (float(thcpercent)/100)) #the amount of substance that's actual thc, achieved by multiplying the total weight/mass by the percentage of thc/100 SOME OF THE SHIT IS IN GRAMS LIKE 1G
             #print(strain + " " + wt + " " + thc + " " + str(price2) + " " + str(thcwt) + " " + str(thcpercent) + " " + str(convwt))
             ppthc = (float(price2)/float(thcwt)) #the price of 1mg of thc per substance. like golf, lower = better
-            print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price + " " + str(thcpercent) + " " + str(convwt) + " " + str(thcwt) + " " + str(ppthc))
+            #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price + " " + str(thcpercent) + " " + str(convwt) + " " + str(thcwt) + " " + str(ppthc))
             #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
             li_Vendor.append(vendor)
             li_Strain.append(strain)
             li_Straintype.append(straintype)
             li_Weight.append(wt)
-            li_THC_Contents.append(thc) # EMPTY 
+            li_THC_Contents.append(thc)
             li_Type.append(type)
             li_Price.append(price)
+            li_THCwt.append(thcwt)
+            li_PpTHC.append(ppthc)
     
 print(li_Vendor ,len(li_Vendor))
 print(li_Strain ,len(li_Strain))
@@ -125,20 +128,23 @@ print(li_THC_Contents ,len(li_THC_Contents))
 print(li_CBD_Contents ,len(li_CBD_Contents))
 print(li_Type ,len(li_Type))
 print(li_Price ,len(li_Price))
-
+print(li_THCwt ,len(li_THCwt))
+print(li_PpTHC ,len(li_PpTHC))
 
 dict = {
     "----Vendor----": li_Vendor,
     "----Strain----": li_Strain,
-    "-------Straintype-------": li_Straintype,
-    "----Weight----": li_Weight,
-    "----THC_Contents----": li_THC_Contents,
-    "----Type----": li_Type,
-    "----Price----": li_Price
+    "----li_Straintype----": li_Straintype,
+    "----li_Weight----": li_Weight,
+    "----li_THC_Contents----": li_THC_Contents,
+    "----li_Type----": li_Type,
+    "----li_Price----": li_Price,
+    "----mg of THC----": li_THCwt,
+    "----Price Per mg of THC----": li_PpTHC
     }
 
-
 df = DataFrame(dict)
+df.to_csv("THCcsv.csv")
 print(df)
 #### headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0'}
 #### requested_doc = requests.get(url, headers=headers)
