@@ -81,7 +81,8 @@ for contents in col:
         category = re.search('>(.+?)</td>', str(string)).group(1)
     except AttributeError:
         category = re.search('>(.+?)</td>', str(string))
-    if category == "vape": # filtering only by vapes rn, maybe make this an area that offers user a selection of the other categories
+    if category == "vape": # filtering only by vapes rn, possibilities are flower, vape, extract, edible, tincture, topical, Merchandise, and None(though i think that just means no match was found)
+#note, below code may potentially need altered if anything other than vape is used. all labeled columns and their presumed contents are modeled based on the vape table. others are untested.
         priceelem = string.find_previous_sibling(class_="ninja_column_5")
         price = re.search('span>(.+?)</td>', str(priceelem)).group(1)
         if price != "$":
