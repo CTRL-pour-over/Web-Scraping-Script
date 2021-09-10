@@ -17,7 +17,7 @@ dict = {
     "----Strain----": t.li_Strain,
     "-------Straintype-------": t.li_Straintype,
     "----Weight----": t.li_Weight,
-    "----THC_Contents----": t.li_THC_Contents,
+    "----THC Contents----": t.li_THC_Contents,
     "----Type----": t.li_Type,
     "----Price----": t.li_Price,
     "----mg of THC----": t.li_THCwt,

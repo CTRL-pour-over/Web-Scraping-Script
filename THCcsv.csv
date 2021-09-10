@@ -1,72 +1,14 @@
-,----Vendor----,----Strain----,----Straintype----,----Weight----,----THC_Contents----,----Type----,----Price----,----mg of THC----,----Price Per mg of THC----
-0,Cresco,Durban,Sativa,500mg,68.42%,LLR Cart,$50,342.1,0.14615609470914936
-1,Cresco,Ghost Train Haze,Sativa,500mg,74.54%,LLR Cart,$50,372.70000000000005,0.13415615776764153
-2,Cresco,Lime Skunk,Sativa,500mg,76.17%,LLR Cart,$50,380.85,0.1312852829197847
-3,Cresco,Chaos Kush,Hybrid,500mg,72.75%,LLR Cart,$50,363.75,0.13745704467353953
-4,Cresco,Green Line OG,Hybrid,500mg,74.29%,LLR Cart,$50,371.45000000000005,0.13460761879122357
-5,Cresco,Lemon Stilton,Hybrid,1.0g,75.24%,LLR Cart,$90,752.4,0.11961722488038277
-6,Cresco,Lime Skunk x Green Line OG,Hybrid,500mg,75.75%,LLR Cart,$50,378.75,0.132013201320132
-7,Cresco,Lime Skunk x Scarlet Queen,Hybrid,1.0g,71.84%,LLR Cart,$90,718.4000000000001,0.1252783964365256
-8,Cresco,Scarlet Queen,Hybrid,500mg,75.19%,LLR Cart,$50,375.95,0.1329964090969544
-9,Moxie,GG #4,Hybrid,500mg,72.86%,LLR Cart,$50,364.3,0.1372495196266813
-10,Moxie,Goji OG,Hybrid,500mg,82.58%,LLR Cart,$50,412.9,0.12109469605231292
-11,Moxie,Lemonhead x GMO,Hybrid,500mg,82.01%,LLR Cart,$50,410.05,0.12193634922570418
-12,Moxie,Slymer,Hybrid,500mg,73.16%,LLR Cart,$50,365.79999999999995,0.1366867140513942
-13,Moxie,Tropical Thunder,Hybrid,500mg,74.51%,LLR Cart,$50,372.55000000000007,0.13421017313112332
-14,Prime Wellness,PT Starqueen #22,Hybrid,500mg,80.44%,LLR Cart,$60,402.2,0.14917951268025859
-15,Rythm,3 Chems,Hybrid,500mg,75.81%,LLR Cart,$60,379.05,0.15829046299960428
-16,Rythm,Brownie Scout #3,Hybrid,500mg,73.44%,LLR Cart,$60,367.2,0.16339869281045752
-17,Rythm,GG #4,Hybrid,500mg,75.89%,LLR Cart,$60,379.45,0.15812359994729214
-18,Select,Garlic Cookies,Hybrid,500mg,84.47%,LLR Cart,$60,422.35,0.14206227062862553
-19,Select,Lemon Grenade,Hybrid,500mg,84.04%,LLR Cart,$60,420.20000000000005,0.1427891480247501
-20,Select,Star Dawg x Northern Lights,Hybrid,500mg,82.24%,LLR Cart,$60,411.19999999999993,0.14591439688715957
-21,Select,Tre OG,Hybrid,500mg,83.54%,LLR Cart,$60,417.7,0.14364376346660282
-22,Cresco,GG #4,Indica,500mg,69.53%,LLR Cart,$50,347.65000000000003,0.1438228102977132
-23,Cresco,Honey Boo x Lime Sorbet,Indica,500mg,75.40%,LLR Cart,$50,377.0,0.13262599469496023
-24,Cresco,OG #18,Indica,500mg,73.49%,LLR Cart,$50,367.45,0.13607293509320997
-25,Rythm,Do Si Dos,Indica,500mg,77.96%,LLR Cart,$60,389.79999999999995,0.15392508978963573
-26,Agri-Kind,Berry Pink,Hybrid,500mg,78.89%,Liquid Sugar Cart,$58,394.45000000000005,0.14704018253264037
-27,Agri-Kind,Philly Special,Hybrid,500mg,76.24%,Liquid Sugar Cart,$58,381.2,0.1521511017838405
-28,Agri-Kind,Ice Cream Dream,Indica,500mg,79.14%,Liquid Sugar Cart,$58,395.7,0.14657568865301998
-29,Agri-Kind,Valley of Cherries [ Platinum Reserve],Indica,500mg,79.79%,Liquid Sugar Cart,$65,398.95000000000005,0.16292768517358064
-30,Rythm,Jet Fuel [300mg],Sativa,300mg,76.57%,Co2 Cart,$35,229.70999999999998,0.15236602672935443
-31,Rythm,98 Bananas,Hybrid,500mg,79.35%,Co2 Cart,$55,396.75,0.13862633900441085
-32,Rythm,Blue Lime Sap,Hybrid,500mg,74.41%,Co2 Cart,$55,372.05,0.1478295927966671
-33,Rythm,Chem Trails,Hybrid,500mg,81.07%,Co2 Cart,$55,405.34999999999997,0.135685210312076
-34,Rythm,Gelato #33,Hybrid,500mg,81.05%,Co2 Cart,$55,405.25,0.13571869216533003
-35,Rythm,Sour Cream,Hybrid,500mg,78.14%,Co2 Cart,$55,390.7,0.14077297158945482
-36,Rythm,Star Tribe,Hybrid,500mg,80.27%,Co2 Cart,$55,401.34999999999997,0.1370374984427557
-37,Standard Farms,Crockett's Dawg,Hybrid,500mg,75.46%,Co2 Cart,$48,377.29999999999995,0.12721971905645377
-38,Rythm,Banana Cream,Indica,500mg,75.19%,Co2 Cart,$55,375.95,0.14629605000664983
-39,Rythm,Brownie Scout,Indica,500mg,72.96%,Co2 Cart,$55,364.79999999999995,0.15076754385964913
-40,Rythm,Hell's Fire OG [300mg],Indica,300mg,76.21%,Co2 Cart,$35,228.62999999999997,0.1530857717709837
-41,Cresco,1:1 Remedi,High-CBD,500mg,41.98%,Co2 Cart,$40,209.89999999999998,0.1905669366364936
-42,Double Bear,Sour Grapefruit,Sativa,500mg,89.22%,Distillate Cart,$40,446.1,0.08966599417171038
-43,Double Bear,Tangie Moonshine,Sativa,1.0g,82.86%,Distillate Cart,$75,828.6,0.09051412020275162
-44,Moxie,Raspberry Pina Colada,Sativa,500mg,78.89%,Distillate Cart,$40,394.45000000000005,0.1014070224363037
-45,Double Bear,Space Lemons,Hybrid,500mg,86.44%,Distillate Cart,$40,432.2,0.09254974548819991
-46,gLeaf,Tangie,Hybrid,500mg,84.38%,Distillate Cart,$50,421.9,0.11851149561507467
-47,gLeaf,Wedding Cake,Hybrid,500mg,85.64%,Distillate Cart,$50,428.20000000000005,0.11676786548341896
-48,Moxie,Member Berry,Hybrid,1.0g,73.67%,Distillate Cart,$80,736.7,0.10859237138591013
-49,Moxie,Red and Blue Berries,Hybrid,500mg,82.68%,Distillate Cart,$40,413.40000000000003,0.09675858732462506
-50,Revel,Super Cereal,Hybrid,500mg,83.21%,Distillate Cart,$45,416.04999999999995,0.10816007691383249
-51,Double Bear,Sour Cherry,Indica,1.0g,85.76%,Distillate Cart,$75,857.6,0.08745335820895522
-52,gLeaf,Granddaddy Purple,Indica,500mg,84.98%,Distillate Cart,$50,424.9,0.11767474699929396
-53,gLeaf,Northern Lights,Indica,500mg,82.09%,Distillate Cart,$50,410.45000000000005,0.12181751735899621
-54,Moxie,Space Pop,Indica,500mg,77.50%,Distillate Cart,$40,387.5,0.1032258064516129
-55,Rythm,Jet Fuel,Sativa,500mg,78.20%,Pax Pod,$60,391.0,0.1534526854219949
-56,Rythm,Bubba Lime,Hybrid,500mg,77.19%,Pax Pod,$60,385.95,0.1554605518849592
-57,Rythm,Brownie Scout,Indica,500mg,74.50%,Pax Pod,$60,372.5,0.1610738255033557
-58,Rythm,Blue Dream CBD,High-CBD,500mg,34.90%,Pax Pod,$60,174.5,0.3438395415472779
-59,Moxie,Sour Apple Haze,Sativa,1.0g,79.56%,Dart Pod,$90,795.6,0.11312217194570136
-60,Moxie,GMO [LLR],Hybrid,500mg,78.07%,Dart Pod,$55,390.34999999999997,0.14089919303189447
-61,Moxie,Sunshine #4 [LLR],Hybrid,500mg,76.55%,Dart pod,$55,382.75,0.14369693011103854
-62,Standard Farms,Pineapple Fields,Hybrid,500mg,70.75%,Dart Pod,$55,353.75,0.15547703180212014
-63,Moxie,Raspberry Lime,Indica,500mg,83.09%,Dart Pod,$50,415.45000000000005,0.12035142616440003
-64,Moxie,XXX OG,Indica,500mg,71.08%,Dart Pod,$55,355.4,0.15475520540236354
-65,Rythm,Golden Goat,Sativa,300mg,81.44%,Disposable Pen,$40,244.32,0.16371971185330714
-66,Grassroots,Lemon Grenades,Hybrid,300mg,84.02%,Disposable Pen,$35,252.05999999999997,0.1388558279774657
-67,Rythm,Chem Trails [300mg],Hybrid,300mg,74.04%,Disposable Pen,$40,222.12,0.18008283810552855
-68,Rythm,Otto Pilot [300mg],Hybrid,300mg,76.92%,Disposable Pen,$40,230.76,0.1733402669440111
-69,Rythm,Pyromancy,Indica,300mg,78.71%,Disposable Pen,$40,236.12999999999997,0.16939821284885448
-70,Ilera,Chickasaw Cooler,Hybrid,250mg,64.85%,LLR Disposable,$35,162.125,0.2158828064764842
+,----Vendor----,----Strain----,----Straintype----,----Weight----,----THC Contents----,----Type----,----Price----,----mg of THC----,----Price Per mg of THC----
+0,gLeaf,Guava [30ml] (13.5mg THC/1 ml),Sativa,30ml,1.35%,Tincture,$40,405.00000000000006,0.09876543209876541
+1,Dr. Solomon's,Rescue Drops [15ml] (26.6mg THC/1 ml),Hybrid,15ml,3.00%,Tincture,$55,450.0,0.12222222222222222
+2,gLeaf,Blackberry Meringue Sweet Lime [30ml] (40mg THC/1 ml),Hybrid,30ml,4.00%,Tincture,$80,1200.0,0.06666666666666667
+3,Moxie,Cherry [30ml] (33.3mg THC/1 ml),Hybrid,30ml,3.35%,Tincture,$80,1005.0000000000001,0.07960199004975123
+4,Moxie,Earl Grey Max Strength [30ml] (33.3mg THC/1 ml),Hybrid,30ml,2.81%,Tincture,$80,843.0,0.09489916963226572
+5,Organic Remedies,Fruit Punch [30ml] (40mg THC/1 ml),Hybrid,30ml,4.18%,Tincture,$70,1254.0,0.05582137161084529
+6,Dr. Solomon's,Doze Drops [15ml] (3.4mg THC/3.4mg CBN/1ml),Indica,15ml,0.46%,Tincture,$45,69.0,0.6521739130434783
+7,gLeaf,Grape [30ml] (25.2mg THC/1 ml),Indica,30ml,2.52%,Tincture,$60,756.0,0.07936507936507936
+8,gLeaf,Spearmint [30ml] (17.5mg THC/1 ml),Indica,30ml,1.75%,Tincture,$60,525.0,0.11428571428571428
+9,gLeaf,Sweet Lime [30ml] (43.5mg THC/1 ml),Indica,30ml,4.30%,Tincture,$80,1290.0,0.06201550387596899
+10,gLeaf,1:1 Alien Rock Candy Fruit Punch [30ml] (17.4mg THC/17.2mg CBD/1 ml),High-CBD,30ml,1.74%,Tincture,$40,522.0,0.07662835249042145
+11,Ilera,Hope 1:1 Mint Chocolate Chip [30ml] (4.5mg THC/5.1mg CBD/1 ml),High-CBD,30ml,0.45%,Tincture,$50,135.00000000000003,0.3703703703703703
+12,Standard Farms,1:1 CBD:THC [15ml] (10.7mg THC/10.6mg CBD/1 ml),High-CBD,15ml,1.14%,Tincture,$40,170.99999999999997,0.2339181286549708

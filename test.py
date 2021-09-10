@@ -84,8 +84,12 @@ for contents in col:
     if category == "vape": # filtering only by vapes rn, possibilities are flower, vape, extract, edible, tincture, topical, Merchandise, and None(though i think that just means no match was found)
 #note, below code may potentially need altered if anything other than vape is used. all labeled columns and their presumed contents are modeled based on the vape table. others are untested.
         priceelem = string.find_previous_sibling(class_="ninja_column_5")
-        price = re.search('span>(.+?)</td>', str(priceelem)).group(1)
-        if price != "$":
+        try:
+            price = re.search('span>(.+?)</td>', str(priceelem)).group(1)
+        except:
+            price = re.search('span>(.+?)</td>', str(priceelem))
+        #print(price)
+        if price != "$" and price != "":
             vendorelem = string.find_previous_sibling(class_="ninja_column_0")
             vendor = re.search('>(.+?)</td>', str(vendorelem)).group(1)
             strainelem = string.find_previous_sibling(class_="ninja_column_1")
@@ -96,33 +100,45 @@ for contents in col:
             except AttributeError:
                 straintype = re.search('alt=\"(.+?)\"', str(strainelem))
             wtelem = string.find_previous_sibling(class_="ninja_column_2")
-            wt = re.search('>(.+?)</td>', str(wtelem)).group(1)
-            thcelem = string.find_previous_sibling(class_="ninja_column_3")
-            thc = re.search('>(.+?)</td>', str(thcelem)).group(1)
-            cbdelem = string.find_previous_sibling(class_="ninja_column_4")
-            cbd = re.search('>(.+?)</td>', str(cbdelem)).group(1)
-            typeelem = string.find_next_sibling(class_="ninja_column_8")
-            type = re.search('>(.+?)</td>', str(typeelem)).group(1)
-            price2 = price.strip("$") #strips out $ symbol so price can be used in calculations
-            thcpercent = thc.strip("%") # strips out % symbol so thc percentage can be used in calculations
-            convwt = re.sub("[^0-9.]", "", wt) # strips everything out of weight except for numbers and periods
-            match = re.match('\d+mg', str(wt), re.IGNORECASE)#checks to see if it's in milligrams
-            if match is None: #runs this if it's not in milligrams to convert to milligrams (making the assumption it's in grams instead)
-                convwt = float(convwt)*1000
-            thcwt = (float(convwt) * (float(thcpercent)/100)) #the amount of substance that's actual thc, achieved by multiplying the total weight/mass by the percentage of thc/100 SOME OF THE SHIT IS IN GRAMS LIKE 1G
-            #print(strain + " " + wt + " " + thc + " " + str(price2) + " " + str(thcwt) + " " + str(thcpercent) + " " + str(convwt))
-            ppthc = (float(price2)/float(thcwt)) #the price of 1mg of thc per substance. like golf, lower = better
-            #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price + " " + str(thcpercent) + " " + str(convwt) + " " + str(thcwt) + " " + str(ppthc))
-            #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
-            li_Vendor.append(vendor)
-            li_Strain.append(strain)
-            li_Straintype.append(straintype)
-            li_Weight.append(wt)
-            li_THC_Contents.append(thc)
-            li_Type.append(type)
-            li_Price.append(price)
-            li_THCwt.append(thcwt)
-            li_PpTHC.append(ppthc)
+            try:
+                wt = re.search('>(.+?)</td>', str(wtelem)).group(1)
+            except:
+                wt = re.search('>(.+?)</td>', str(wtelem))
+            #print(wt)
+            if wt != None:
+                thcelem = string.find_previous_sibling(class_="ninja_column_3")
+                #print(thcelem)
+                thc = re.search('>(.+?)</td>', str(thcelem)).group(1)
+                if thc != "0.00%" and thc != None:
+                    #print(thc)
+                    cbdelem = string.find_previous_sibling(class_="ninja_column_4")
+                    cbd = re.search('>(.+?)</td>', str(cbdelem)).group(1)
+                    typeelem = string.find_next_sibling(class_="ninja_column_8")
+                    type = re.search('>(.+?)</td>', str(typeelem)).group(1)
+                    price2 = price.strip("$") #strips out $ symbol so price can be used in calculations
+                    thcpercent = thc.strip("%") # strips out % symbol so thc percentage can be used in calculations
+                    convwt = re.sub("[^0-9.]", "", wt) # strips everything out of weight except for numbers and periods
+                    #print(convwt)
+                    match = re.match('\d+mg', str(wt), re.IGNORECASE)#checks to see if it's in milligrams
+                    if match is None: #runs this if it's not in milligrams to convert to milligrams (making the assumption it's in grams instead)
+                        convwt = float(convwt)*1000
+                    #print(convwt)
+                    #print(thcpercent)
+                    thcwt = (float(convwt) * (float(thcpercent)/100)) #the amount of substance that's actual thc, achieved by multiplying the total weight/mass by the percentage of thc/100 SOME OF THE SHIT IS IN GRAMS LIKE 1G
+                    #print(strain + " " + wt + " " + thc + " " + str(price2) + " " + str(thcwt) + " " + str(thcpercent) + " " + str(convwt))
+                    #print(thcwt)
+                    ppthc = (float(price2)/float(thcwt)) #the price of 1mg of thc per substance. like golf, lower = better
+                    #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price + " " + str(thcpercent) + " " + str(convwt) + " " + str(thcwt) + " " + str(ppthc))
+                    #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
+                    li_Vendor.append(vendor)
+                    li_Strain.append(strain)
+                    li_Straintype.append(straintype)
+                    li_Weight.append(wt)
+                    li_THC_Contents.append(thc)
+                    li_Type.append(type)
+                    li_Price.append(price)
+                    li_THCwt.append(thcwt)
+                    li_PpTHC.append(ppthc)
     
 print(li_Vendor ,len(li_Vendor))
 print(li_Strain ,len(li_Strain))
@@ -140,7 +156,7 @@ dict = {
     "----Strain----": li_Strain,
     "----Straintype----": li_Straintype,
     "----Weight----": li_Weight,
-    "----THC_Contents----": li_THC_Contents,
+    "----THC Contents----": li_THC_Contents,
     "----Type----": li_Type,
     "----Price----": li_Price,
     "----mg of THC----": li_THCwt,
