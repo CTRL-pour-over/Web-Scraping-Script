@@ -98,6 +98,17 @@ for contents in col:
             cbd = re.search('>(.+?)</td>', str(cbdelem)).group(1)
             typeelem = string.find_next_sibling(class_="ninja_column_8")
             type = re.search('>(.+?)</td>', str(typeelem)).group(1)
+            price2 = price.strip("$") #strips out $ symbol so price can be used in calculations
+            thcpercent = thc.strip("%") # strips out % symbol so thc percentage can be used in calculations
+            convwt = re.sub("[^0-9]", "", wt)
+            match = re.match('\d+mg', str(wt), re.IGNORECASE)#checks to see if it's in milligrams
+            if match is None: #runs this if it's not in milligrams to convert to milligrams (making the assumption it's in grams instead)
+                convwt = float(convwt)*100
+            thcwt = (float(convwt) * (float(thcpercent)/100)) #the amount of substance that's actual thc, achieved by multiplying the total weight/mass by the percentage of thc/100 SOME OF THE SHIT IS IN GRAMS LIKE 1G
+            #print(strain + " " + wt + " " + thc + " " + str(price2) + " " + str(thcwt) + " " + str(thcpercent) + " " + str(convwt))
+            ppthc = (float(price2)/float(thcwt)) #the price of 1mg of thc per substance. like golf, lower = better
+            print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price + " " + str(thcpercent) + " " + str(convwt) + " " + str(thcwt) + " " + str(ppthc))
+<<<<<<< HEAD
             #print(vendor + " " + type + " " + strain + " " + wt + " " + thc + " " + cbd + " " + price)
             li_Vendor.append(vendor)
             li_Strain.append(strain)
@@ -126,6 +137,7 @@ dict = {
     "----li_Type----": li_Type,
     "----li_Price----": li_Price
     }
+
 
 df = DataFrame(dict)
 print(df)
