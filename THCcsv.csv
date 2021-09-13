@@ -1,74 +1,80 @@
-,----Vendor----,----Strain----,----Straintype----,----Weight----,----THC Contents----,----Type----,----Price----,----mg of THC----,----Price Per mg of THC----
-0,Cresco,Durban,Sativa,500mg,68.42%,LLR Cart,$50,342.1,0.14615609470914936
-1,Cresco,Ghost Train Haze,Sativa,500mg,74.54%,LLR Cart,$50,372.70000000000005,0.13415615776764153
-2,Cresco,Lime Skunk,Sativa,500mg,76.17%,LLR Cart,$50,380.85,0.1312852829197847
-3,Rythm,Citrus Sap,Sativa,500mg,79.36%,LLR Cart,$60,396.8,0.15120967741935484
-4,Cresco,Chaos Kush,Hybrid,500mg,72.75%,LLR Cart,$50,363.75,0.13745704467353953
-5,Cresco,Green Line OG,Hybrid,500mg,74.29%,LLR Cart,$50,371.45000000000005,0.13460761879122357
-6,Cresco,Lemon Stilton,Hybrid,1.0g,75.24%,LLR Cart,$90,752.4,0.11961722488038277
-7,Cresco,Lime Skunk x Green Line OG,Hybrid,500mg,75.75%,LLR Cart,$50,378.75,0.132013201320132
-8,Cresco,Lime Skunk x Scarlet Queen,Hybrid,1.0g,71.84%,LLR Cart,$90,718.4000000000001,0.1252783964365256
-9,Cresco,Scarlet Queen,Hybrid,500mg,75.19%,LLR Cart,$50,375.95,0.1329964090969544
-10,Moxie,GG #4,Hybrid,500mg,72.86%,LLR Cart,$50,364.3,0.1372495196266813
-11,Moxie,Goji OG,Hybrid,500mg,82.58%,LLR Cart,$50,412.9,0.12109469605231292
-12,Moxie,Lemonhead x GMO,Hybrid,500mg,82.01%,LLR Cart,$50,410.05,0.12193634922570418
-13,Moxie,Slymer,Hybrid,500mg,73.16%,LLR Cart,$50,365.79999999999995,0.1366867140513942
-14,Moxie,Tropical Thunder,Hybrid,500mg,74.51%,LLR Cart,$50,372.55000000000007,0.13421017313112332
-15,Prime Wellness,PT Starqueen #22,Hybrid,500mg,80.44%,LLR Cart,$60,402.2,0.14917951268025859
-16,Rythm,3 Chems,Hybrid,500mg,75.81%,LLR Cart,$60,379.05,0.15829046299960428
-17,Rythm,Brownie Scout #3,Hybrid,500mg,73.44%,LLR Cart,$60,367.2,0.16339869281045752
-18,Rythm,GG #4,Hybrid,500mg,75.89%,LLR Cart,$60,379.45,0.15812359994729214
-19,Select,Garlic Cookies,Hybrid,500mg,84.47%,LLR Cart,$60,422.35,0.14206227062862553
-20,Select,Lemon Grenade,Hybrid,500mg,84.04%,LLR Cart,$60,420.20000000000005,0.1427891480247501
-21,Select,Star Dawg x Northern Lights,Hybrid,500mg,82.24%,LLR Cart,$60,411.19999999999993,0.14591439688715957
-22,Select,Tre OG,Hybrid,500mg,83.54%,LLR Cart,$60,417.7,0.14364376346660282
-23,Cresco,GG #4,Indica,500mg,69.53%,LLR Cart,$50,347.65000000000003,0.1438228102977132
-24,Cresco,Honey Boo x Lime Sorbet,Indica,500mg,75.40%,LLR Cart,$50,377.0,0.13262599469496023
-25,Cresco,OG #18,Indica,500mg,73.49%,LLR Cart,$50,367.45,0.13607293509320997
-26,Rythm,Do Si Dos,Indica,500mg,77.96%,LLR Cart,$60,389.79999999999995,0.15392508978963573
-27,Agri-Kind,Berry Pink,Hybrid,500mg,78.89%,Liquid Sugar Cart,$58,394.45000000000005,0.14704018253264037
-28,Agri-Kind,Philly Special,Hybrid,500mg,76.24%,Liquid Sugar Cart,$58,381.2,0.1521511017838405
-29,Agri-Kind,Ice Cream Dream,Indica,500mg,79.14%,Liquid Sugar Cart,$58,395.7,0.14657568865301998
-30,Agri-Kind,Valley of Cherries [ Platinum Reserve],Indica,500mg,79.79%,Liquid Sugar Cart,$65,398.95000000000005,0.16292768517358064
-31,Rythm,Jet Fuel [300mg],Sativa,300mg,76.57%,Co2 Cart,$35,229.70999999999998,0.15236602672935443
-32,Rythm,3 Chems,Hybrid,500mg,84.97%,Co2 Cart,$55,424.85,0.129457455572555
-33,Rythm,98 Bananas,Hybrid,500mg,79.35%,Co2 Cart,$55,396.75,0.13862633900441085
-34,Rythm,Blue Lime Sap,Hybrid,500mg,74.41%,Co2 Cart,$55,372.05,0.1478295927966671
-35,Rythm,Bubba Lime,Hybrid,500mg,82.74%,Co2 Cart,$55,413.69999999999993,0.13294657964708728
-36,Rythm,Chem Trails,Hybrid,500mg,81.07%,Co2 Cart,$55,405.34999999999997,0.135685210312076
-37,Rythm,Gelato #33,Hybrid,500mg,81.05%,Co2 Cart,$55,405.25,0.13571869216533003
-38,Rythm,Sour Cream,Hybrid,500mg,78.14%,Co2 Cart,$55,390.7,0.14077297158945482
-39,Rythm,Star Tribe,Hybrid,500mg,80.27%,Co2 Cart,$55,401.34999999999997,0.1370374984427557
-40,Standard Farms,Crockett's Dawg,Hybrid,500mg,75.46%,Co2 Cart,$48,377.29999999999995,0.12721971905645377
-41,Rythm,Banana Cream [300mg],Indica,300mg,86.50%,Co2 Cart,$35,259.5,0.1348747591522158
-42,Rythm,Banana Cream,Indica,500mg,75.19%,Co2 Cart,$55,375.95,0.14629605000664983
-43,Rythm,Brownie Scout,Indica,500mg,72.96%,Co2 Cart,$55,364.79999999999995,0.15076754385964913
-44,Rythm,Hell's Fire OG [300mg],Indica,300mg,76.21%,Co2 Cart,$35,228.62999999999997,0.1530857717709837
-45,Cresco,1:1 Remedi,High-CBD,500mg,41.98%,Co2 Cart,$40,209.89999999999998,0.1905669366364936
-46,Double Bear,Sour Grapefruit,Sativa,500mg,89.22%,Distillate Cart,$40,446.1,0.08966599417171038
-47,Double Bear,Tangie Moonshine,Sativa,1.0g,82.86%,Distillate Cart,$75,828.6,0.09051412020275162
-48,Moxie,Raspberry Pina Colada,Sativa,500mg,78.89%,Distillate Cart,$40,394.45000000000005,0.1014070224363037
-49,Double Bear,Space Lemons,Hybrid,500mg,86.44%,Distillate Cart,$40,432.2,0.09254974548819991
-50,gLeaf,Tangie,Hybrid,500mg,84.38%,Distillate Cart,$50,421.9,0.11851149561507467
-51,gLeaf,Wedding Cake,Hybrid,500mg,85.64%,Distillate Cart,$50,428.20000000000005,0.11676786548341896
-52,Moxie,Member Berry,Hybrid,1.0g,73.67%,Distillate Cart,$80,736.7,0.10859237138591013
-53,Revel,Super Cereal,Hybrid,500mg,83.21%,Distillate Cart,$45,416.04999999999995,0.10816007691383249
-54,Double Bear,Sour Cherry,Indica,1.0g,85.76%,Distillate Cart,$75,857.6,0.08745335820895522
-55,gLeaf,Granddaddy Purple,Indica,500mg,84.98%,Distillate Cart,$50,424.9,0.11767474699929396
-56,gLeaf,Northern Lights,Indica,500mg,82.09%,Distillate Cart,$50,410.45000000000005,0.12181751735899621
-57,Moxie,Space Pop,Indica,500mg,77.50%,Distillate Cart,$40,387.5,0.1032258064516129
-58,Rythm,Jet Fuel,Sativa,500mg,78.20%,Pax Pod,$60,391.0,0.1534526854219949
-59,Rythm,Bubba Lime,Hybrid,500mg,77.19%,Pax Pod,$60,385.95,0.1554605518849592
-60,Rythm,Brownie Scout,Indica,500mg,74.50%,Pax Pod,$60,372.5,0.1610738255033557
-61,Rythm,Blue Dream CBD,High-CBD,500mg,34.90%,Pax Pod,$60,174.5,0.3438395415472779
-62,Moxie,Sour Apple Haze,Sativa,1.0g,79.56%,Dart Pod,$90,795.6,0.11312217194570136
-63,Moxie,GMO [LLR],Hybrid,500mg,78.07%,Dart Pod,$55,390.34999999999997,0.14089919303189447
-64,Moxie,Sunshine #4 [LLR],Hybrid,500mg,76.55%,Dart pod,$55,382.75,0.14369693011103854
-65,Standard Farms,Pineapple Fields,Hybrid,500mg,70.75%,Dart Pod,$55,353.75,0.15547703180212014
-66,Moxie,Raspberry Lime,Indica,500mg,83.09%,Dart Pod,$50,415.45000000000005,0.12035142616440003
-67,Moxie,XXX OG,Indica,500mg,71.08%,Dart Pod,$55,355.4,0.15475520540236354
-68,Rythm,Golden Goat,Sativa,300mg,81.44%,Disposable Pen,$40,244.32,0.16371971185330714
-69,Grassroots,Lemon Grenades,Hybrid,300mg,84.02%,Disposable Pen,$35,252.05999999999997,0.1388558279774657
-70,Rythm,Chem Trails [300mg],Hybrid,300mg,74.04%,Disposable Pen,$40,222.12,0.18008283810552855
-71,Rythm,Otto Pilot [300mg],Hybrid,300mg,76.92%,Disposable Pen,$40,230.76,0.1733402669440111
-72,Rythm,Pyromancy,Indica,300mg,78.71%,Disposable Pen,$40,236.12999999999997,0.16939821284885448
+,vendor,name,weight,thc,cbd,price
+0,GROWER,LLR CARTS ,WT,THC,CBD,$
+1,Cresco, Durban    ,500mg,68.42%,0.10%,$50
+2,Cresco, Ghost Train Haze    ,500mg,74.54%,0.13%,$50
+3,Cresco, Lime Skunk    ,500mg,76.17%,0.13%,$50
+4,Rythm, Citrus Sap    ,500mg,79.36%,0.00%,$60
+5,Rythm, Sour Diesel    ,500mg,80.09%,0.00%,$60
+6,Cresco, Chaos Kush    ,500mg,72.75%,0.14%,$50
+7,Cresco, Green Line OG    ,500mg,74.29%,0.11%,$50
+8,Cresco, Lemon Stilton    ,1.0g,75.24%,0.09%,$90
+9,Cresco, Lime Skunk x Green Line OG    ,500mg,75.75%,0.12%,$50
+10,Cresco, Lime Skunk x Scarlet Queen    ,1.0g,71.84%,0.12%,$90
+11,Cresco, Scarlet Queen    ,500mg,75.19%,0.15%,$50
+12,Moxie, GG #4    ,500mg,72.86%,0.00%,$50
+13,Moxie, Lemonhead x GMO    ,500mg,82.01%,0.00%,$50
+14,Moxie, Slymer    ,500mg,73.16%,0.00%,$50
+15,Moxie, Tropical Thunder    ,500mg,74.51%,0.00%,$50
+16,Prime Wellness, PT Starqueen #22    ,500mg,80.44%,0.00%,$60
+17,Rythm, 3 Chems    ,500mg,75.81%,0.00%,$60
+18,Rythm, Brownie Scout #3    ,500mg,73.44%,0.00%,$60
+19,Rythm, GG #4    ,500mg,75.89%,0.00%,$60
+20,Select, Garlic Cookies    ,500mg,84.47%,0.00%,$60
+21,Select, Lemon Grenade    ,500mg,84.04%,0.00%,$60
+22,Select, Star Dawg x Northern Lights    ,500mg,82.24%,0.00%,$60
+23,Select, Tre OG    ,500mg,83.54%,0.00%,$60
+24,Cresco, GG #4    ,500mg,69.53%,0.14%,$50
+25,Cresco, Honey Boo x Lime Sorbet    ,500mg,75.40%,1.62%,$50
+26,Cresco, OG #18    ,500mg,73.49%,0.24%,$50
+27,Prime Wellness, Chem de la Chem #2    ,500mg,77.47%,0.00%,$60
+28,Prime Wellness, PT Stardawg #36    ,500mg,74.19%,0.00%,$60
+29,Rythm, Do Si Dos    ,500mg,77.96%,0.00%,$60
+30,GROWER,LIQUID SUGAR CARTS ,WT,THC,CBD,$
+31,Agri-Kind, Berry Pink    ,500mg,78.89%,0.00%,$58
+32,Agri-Kind, Philly Special    ,500mg,76.24%,0.00%,$58
+33,Agri-Kind, Ice Cream Dream    ,500mg,79.14%,0.00%,$58
+34,Agri-Kind, Valley of Cherries [ Platinum Reserve]    ,500mg,79.79%,0.00%,$65
+35,GROWER,Co2 CARTS ,WT,THC,CBD,$
+36,Rythm, Jet Fuel [300mg]    ,300mg,76.57%,0.00%,$35
+37,Rythm, 3 Chems    ,500mg,84.97%,0.00%,$55
+38,Rythm, 98 Bananas    ,500mg,79.35%,0.00%,$55
+39,Rythm, Blue Lime Sap    ,500mg,74.41%,0.00%,$55
+40,Rythm, Bubba Lime    ,500mg,82.74%,0.00%,$55
+41,Rythm, Chem Trails    ,500mg,81.07%,0.00%,$55
+42,Rythm, Gelato #33    ,500mg,81.05%,0.00%,$55
+43,Rythm, Gorilla Island   ,500mg,0.00%,0.00%,$55
+44,Rythm, Sour Cream    ,500mg,78.14%,0.00%,$55
+45,Rythm, Star Tribe    ,500mg,80.27%,0.00%,$55
+46,Rythm, Banana Cream [300mg]    ,300mg,86.50%,0.00%,$35
+47,Rythm, Banana Cream    ,500mg,75.19%,0.00%,$55
+48,Rythm, Brownie Scout    ,500mg,72.96%,0.00%,$55
+49,Rythm, Hell's Fire OG [300mg]    ,300mg,76.21%,0.00%,$35
+50,Cresco, 1:1 Remedi    ,500mg,41.98%,42.47%,$40
+51,GROWER,DISTILLATE CARTS ,WT,THC,CBD,$
+52,Double Bear, Sour Grapefruit    ,500mg,89.22%,0.00%,$40
+53,Double Bear, Tangie Moonshine    ,1.0g,82.86%,0.00%,$75
+54,Moxie, Raspberry Pina Colada   ,500mg,78.89%,0.00%,$40
+55,gLeaf, Girl Scout Cookies    ,500mg,81.46%,0.22%,$50
+56,gLeaf, Tangie    ,500mg,84.38%,0.17%,$50
+57,gLeaf, Trainwreck    ,500mg,88.49%,0.31%,$50
+58,gLeaf, Wedding Cake    ,500mg,85.64%,0.62%,$50
+59,Moxie, Member Berry    ,1.0g,73.67%,0.00%,$80
+60,Revel, Super Cereal    ,500mg,83.21%,0.00%,$45
+61,Double Bear, Sour Cherry    ,1.0g,85.76%,0.00%,$75
+62,gLeaf, Granddaddy Purple    ,500mg,84.98%,0.32%,$50
+63,gLeaf, Northern Lights    ,500mg,82.09%,0.00%,$50
+64,GROWER,PAX PODS ,WT,THC,CBD,$
+65,Rythm, Bubba Lime    ,500mg,77.19%,0.00%,$60
+66,Rythm, Brownie Scout    ,500mg,74.50%,0.00%,$60
+67,Rythm, Blue Dream CBD    ,500mg,34.90%,41.90%,$60
+68,GROWER,DART PODS ,WT,THC,CBD,$
+69,Moxie, Sour Apple Haze    ,1.0g,79.56%,0.00%,$90
+70,Moxie, Sunshine #4 [LLR]    ,500mg,76.55%,0.00%,$55
+71,Standard Farms, Pineapple Fields    ,500mg,70.75%,0.00%,$55
+72,Moxie, Raspberry Lime    ,500mg,83.09%,0.00%,$50
+73,Moxie, XXX OG    ,500mg,71.08%,0.00%,$55
+74,GROWER,DISPOSABLES ,WT,THC,CBD,$
+75,Rythm, Golden Goat    ,300mg,81.44%,0.00%,$40
+76,Rythm, Chem Trails [300mg]    ,300mg,74.04%,0.00%,$40
+77,Rythm, Otto Pilot [300mg]    ,300mg,76.92%,0.00%,$40
+78,Rythm, Pyromancy    ,300mg,78.71%,0.00%,$40
